@@ -1,0 +1,184 @@
+:root{
+    --background-color: #F2F2F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #D91448;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    font-size: 2rem;
+    color: var(--background-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+/* MAIN SECTION  */
+
+#container{
+    min-height: 91vh;
+    background-color: var(--background-color);
+    display: flex;
+}
+
+#sidebar{
+    background-color: var(--background-color);
+    width: 20vw;
+    min-height: 100%;
+    border-right: 1px solid #D91448;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.addBtn, .addBtnForm{
+    background-color: #D91448;
+    width: 90px;
+    height: 34px;
+    border: none;
+    border-radius: 19px;
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.addBtn:hover, .addBtnForm:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+
+#task-list{
+    width: 80vw;
+    padding: 20px 30px;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    margin-bottom: 20px;
+}
+
+.taskCard{
+    background-color: rgb(255,255,255,0.6);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 9px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+ul li h2{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+ul li p{
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #D9958F;
+}
+
+.taskCard button{
+    background-color: #D9958F;
+    border: none;
+    width: 90px;
+    height: 25px;
+    border-radius: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.taskCard button:hover{
+    cursor: pointer;
+    background-color: #A60F46;
+}
+
+
+/* TASK FORM  */
+
+.taskForm{
+    background-color: rgb(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 600px;
+}
+
+.input-wrapper{
+    min-width: 50%;
+    min-height: 50%;
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.label-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.taskForm label{
+    color: #400112;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.taskForm input{
+    padding: 3px 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(153, 151, 151);
+    color: #D91448;
+    font-size: 1.25rem;
+}
+
+.taskForm input:focus{
+    outline: none;
+}
+
+.hidde {
+    display: none;
+}
